@@ -62,6 +62,7 @@
         font-size: 20px;
         border-radius: 5px;
         color: brown;
+        position: relative;
       }
 
       #secondheader {
@@ -78,7 +79,7 @@
       #showdetails
       {
         height: 40px;
-        width: 90%;
+        width: 99%;
         margin: 10px;
         display: flex;
         border: 2px solid cornflowerblue;
@@ -91,11 +92,11 @@
       {
         border: 2px solid rgb(250, 164, 164);
         color: rgb(243, 136, 136);
-        font-size: 20px;
+        font-size: 15px;
       }
       #showalldetails
       {
-        height: 500px;
+        height: 460px;
         width: 100%;
         margin-top: 10px;
       }
@@ -116,20 +117,52 @@
       }
       #togetallspace
       {
-        margin: 10px;
         display: grid;
         justify-content: center;
         align-items: center;
         height: 400px;
-        width: 95%;
+        width: 99%;
         border: 2px solid  green;
         color: cornflowerblue;
+        margin: 10px;
+      }
+      #footer
+      {
+        margin-top: 10px;
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: grey;
+        border-radius: 10px;
+      }
+      #footer i
+      {
+        margin-left: 10px;
+        margin: 30px;
+      }
+      #ud
+      {
+        position: absolute;
+        left: 0;
+        margin-left: 15px;
+      }
+      #contact
+      {
+        margin-top: 10px;
+        height: 60px;
+        width: 100%;
+        background-color: rgb(167, 166, 166);
+        display:grid;
+        justify-content: center;
+        align-items: center;
       }
     </style>
   </head>
   <body>
     <div id="header">
-      <h1>Welcome</h1>
+      <h1 style="position: sticky;">Welcome</h1>
     </div>
     <div class="carousel-container">
       <div class="carousel_items">
@@ -160,21 +193,34 @@
         type="text"
         name="serialnumber"
         id="serialnumber"
-        placeholder="Enter user serial number" style="height: 40px;width: 80px;margin-left: 10px;
+        placeholder="Enter user serial number" style="height: 40px;width: 200px;margin-left: 10px;
         border-radius: 5px; background-color: aquamarine;"
       />
-      <div id="showdetails"></div>
+      <div id="showdetails">
+        <span id="ud">User Details :-</span>
+      </div>
     </div>
     <div id="showalldetails">
       <div id="togetall">
         <button id="all">TOGETALL</button>
       </div>
       <div id="togetallspace">
-
+    
       </div>
     </div>
 
+    <div id="footer">
+      <i  class="fa-brands fa-square-instagram fa-2xl" style="color: #B197FC;"></i>
+        <i class="fa-brands fa-square-twitter fa-2xl" style="color: #B197FC;"></i>
+        <i class="fa-brands fa-square-facebook fa-2xl" style="color: #B197FC;"></i>
+    </div>
+    <div id="contact">
+      <a href="" style="margin-bottom: 10px;">achannanagouda4444@gmail.com</a>
+      <a href="" style="margin-bottom: 40px;margin-left: 70px;">8660453959</a>
+    </div>
 
+
+    <script src="https://kit.fontawesome.com/9e3cd35b2d.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
       
