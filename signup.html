@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      #header {
+        padding: 10px;
+        margin: 10px;
+        display: grid;
+        justify-content: center;
+        text-decoration: underline;
+      }
+      #whole {
+        display: flex;
+        justify-content: center;
+      }
+      #box {
+        height: 350px;
+        width: 350px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+      }
+      #email {
+        margin-left: 27px;
+      }
+      #password {
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1 id="register">Register</h1>
+    </div>
+
+    <div id="whole">
+      <div id="box">
+        <form action="">
+          <label for="firstname">Firstname</label>
+          <input type="text" name="firstname" id="firstname" />
+          <br /><br />
+          <label for="lastname">Lastname</label>
+          <input type="text" name="lastname" id="lastname" />
+          <br /><br />
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" autocomplete="email" />
+          <br /><br />
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" minlength="9" />
+          <br /><br />
+          <label for="male">
+            <input type="radio" name="gender" id="male" value="Male" required />
+            Male
+          </label>
+          <label for="female">
+            <input
+              type="radio"
+              name="gender"
+              id="female"
+              value="Female"
+              required
+            />
+            Female
+          </label>
+          <br /><br />
+          <button id="register" onclick="registering()">Register</button>
+        </form>
+        <label for="login"
+          >To Login page :
+          <button
+            id="login"
+            style="width: 80px; height: 30px; margin-left: 20px"
+          >
+            Login
+          </button>
+        </label>
+      </div>
+    </div>
+
+    <script>
+      function registering() {
+        let firstname = document.getElementById("firstname").value;
+        let lastname = document.getElementById("lastname").value;
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+        let male = document.getElementById("male").value;
+        let female = document.getElementById("female").value;
+        if (
+          firstname == "" ||
+          lastname == "" ||
+          email == "" ||
+          password == ""
+        ) {
+          alert("Please fill all the required details");
+        } else {
+          alert(
+            "You're successfully logged in.Please enter the login button to login to the website"
+          );
+        }
+      }
+
+      let login = document.getElementById("login");
+      login.addEventListener("click", () => {
+        window.location.href = "signin.html";
+      });
+    </script>
+  </body>
+</html>

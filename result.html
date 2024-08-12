@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .carousel_items {
+        display: flex;
+        wrap: nowrap;
+        overflow: hidden;
+      }
+      .carousel_item {
+        position: relative;
+        min-width: 100%;
+        height: 90vh;
+        transition: all 0.5s linear;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      .carousel_text {
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translate(-50%);
+        padding: 0.5rem 1rem;
+        border-radius: 3px;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        text-shadow: 1px 1px black;
+        font-size: calc(1.5rem + 0.3vw);
+        font-weight: bolder;
+      }
+
+      .item1 {
+        background-image: url("https://picsum.photos/id/1/700/550");
+      }
+      .item2 {
+        background-image: url("https://picsum.photos/id/2/700/550");
+      }
+      .item3 {
+        background-image: url("https://picsum.photos/id/3/700/550");
+      }
+      .item4 {
+        background-image: url("https://picsum.photos/id/4/700/550");
+      }
+      .item5 {
+        background-image: url("https://picsum.photos/id/5/700/300");
+      }
+      #header {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+        font-size: 30px;
+        border-radius: 5px;
+      }
+
+      #secondheader {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+      }
+      #main {
+        height: 300px;
+        width: 100vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Welcome</h1>
+    </div>
+    <div class="carousel-container">
+      <div class="carousel_items">
+        <div class="carousel_item item1">
+          <p class="carousel_text">Image 1</p>
+        </div>
+        <div class="carousel_item item2">
+          <p class="carousel_text">Image 2</p>
+        </div>
+        <div class="carousel_item item3">
+          <p class="carousel_text">Image 3</p>
+        </div>
+        <div class="carousel_item item4">
+          <p class="carousel_text">Image 4</p>
+        </div>
+        <div class="carousel_item item5">
+          <p class="carousel_text">Image 5</p>
+        </div>
+      </div>
+    </div>
+    <div id="secondheader">
+      <h2>All the login details :</h2>
+    </div>
+
+    <div id="main">
+      <h1>To Get Details :</h1>
+      <input
+        type="text"
+        name="firstname"
+        id="firstname"
+        placeholder="Enter user firstname"
+      />
+      <div id="showdetails"></div>
+    </div>
+    <script>
+      //   const carouselItems = document.querySelectorAll(".carousel_item");
+      //   let i = 1;
+
+      //   setInterval(() => {
+      //     // Accessing All the carousel Items
+      //     Array.from(carouselItems).forEach((item, index) => {
+      //       if (i < carouselItems.length) {
+      //         item.style.transform = `translateX(-${i * 100}%)`;
+      //       }
+      //     });
+
+      //     if (i < carouselItems.length) {
+      //       i++;
+      //     } else {
+      //       i = 0;
+      //     }
+      //   }, 5000);
+      let deatils1 = document.getElementById("firstname");
+      deatils1.addEventListener("click", () => {
+        let showdetails = document.getElementById("showdetails");
+        showdetails.innerHTML;
+      });
+    </script>
+  </body>
+</html>
