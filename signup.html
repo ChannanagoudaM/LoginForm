@@ -8,6 +8,10 @@
       body {
         padding: 0;
         margin: 0;
+        background-image: url("himalayan1.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
       }
       #header {
         padding: 10px;
@@ -15,6 +19,7 @@
         display: grid;
         justify-content: center;
         text-decoration: underline;
+        color: chocolate;
       }
       #whole {
         display: flex;
@@ -23,18 +28,57 @@
       #box {
         height: 350px;
         width: 350px;
-        border: 2px solid grey;
         border-radius: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
         display: grid;
       }
+      #box label
+      {
+        font-size: larger;
+        color: chocolate;
+        font-weight: bolder;
+      }
       #email {
-        margin-left: 27px;
+        margin-left: 32px;
       }
       #password {
-        margin-left: 5px;
+        margin-left:6px;
+      }
+      #box label
+      {
+        color: #101820;
+      }
+      #box input
+      {
+        color: #272301d8;
+        border-radius: 5px;
+        background-color: transparent;
+      }
+      #register
+      {
+        height: 30px;
+        background-color: transparent;
+        font-weight: bolder;
+        border-radius: 6px;
+      }
+      #register:hover
+      {
+        background-color: aqua;
+        transition: 1s;
+      }
+      #login
+      {
+        height: 30px;
+        background-color: transparent;
+        font-weight: bolder;
+        border-radius: 6px;
+      }
+      #login:hover
+      {
+        background-color: aqua;
+        transition: 1s;
       }
     </style>
   </head>
